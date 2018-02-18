@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="6dip"
+    android:paddingTop="6dip"
+    android:paddingBottom="6dip">
+    <ImageView
+    	android:id="@+id/row_album_art"
+    	android:layout_width="50dip"
+    	android:layout_height="50dip"
+ 		android:src="@drawable/git"
+    ></ImageView>
+    <TextView
+    	android:id="@+id/row_title"
+    	android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:gravity="center_vertical"
+    	android:layout_toRightOf="@id/row_album_art"
+    	android:paddingLeft="5dip"
+    	android:paddingRight="10dip"
+    	android:textSize="18dip"
+    	android:ellipsize="marquee"
+    	android:singleLine="true"
+    	android:text="111"
+    ></TextView>
+    <TextView
+   	 	android:id="@+id/row_album"
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:layout_toRightOf="@id/row_album_art"
+    	android:layout_below="@id/row_title"
+    	android:paddingLeft="5dip"
+    	android:textSize="12dip"
+    	android:singleLine="true"
+    	android:text="222"
+    ></TextView>
+    <TextView
+        android:id="@+id/row_duration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/row_album"
+        android:layout_alignBottom="@+id/row_album"
+        android:layout_alignRight="@+id/row_title"
+        android:paddingRight="10dip"
+        android:singleLine="true"
+        android:text="333"
+        android:textSize="12dip" />
+     <ImageView
+    	android:id="@+id/has_lyric"
+    	android:layout_alignRight="@+id/row_duration"
+    	android:layout_width="5dip"
+    	android:layout_height="50dip"
+    ></ImageView>
+</RelativeLayout>
+

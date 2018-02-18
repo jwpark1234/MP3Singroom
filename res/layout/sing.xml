@@ -1,0 +1,90 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/StartBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:height="100dp"
+        android:text="시작"
+        android:width="100dp" />
+
+    <Button
+        android:id="@+id/StopBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/StartBtn"
+        android:layout_alignTop="@+id/StartBtn"
+        android:layout_marginRight="15dp"
+        android:layout_toLeftOf="@+id/StartBtn"
+        android:height="80dp"
+        android:text="취소"
+        android:width="30dp" />
+
+    <CheckBox
+        android:id="@+id/checkbox1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/StartBtn"
+        android:layout_marginLeft="15dp"
+        android:layout_toRightOf="@+id/StartBtn"
+        android:text="녹음" />
+
+    <ImageView
+        android:id="@+id/imageAni"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp" />
+
+    <TextView
+        android:id="@+id/line2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_above="@+id/StartBtn"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        android:padding="5dp"
+        android:textSize="15dp"
+        android:scrollbars="vertical" />
+
+    <TextView
+        android:id="@+id/line1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/line2"
+        android:layout_alignParentLeft="true"
+        android:gravity="center"
+        android:padding="5dp"
+        android:textSize="15dp"
+        android:scrollbars="vertical" />
+
+    <TextView
+        android:id="@+id/hint"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/line1"
+        android:layout_alignParentLeft="true"
+        android:gravity="center"
+        android:padding="5dp"
+        android:textSize="15dp"
+        android:scrollbars="vertical"
+        android:textColor="#ff0000" />
+
+    <CheckBox
+        android:id="@+id/checkbox3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/StartBtn"
+        android:layout_alignLeft="@+id/checkbox1"
+        android:text="에코" />
+
+</RelativeLayout>

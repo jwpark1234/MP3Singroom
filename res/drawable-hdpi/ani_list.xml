@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:oneshot="false" >
+
+    <item android:drawable="@drawable/ani1"
+        android:duration="250"/>
+    
+    <item android:drawable="@drawable/ani2"
+        android:duration="250"/>
+    
+    <item android:drawable="@drawable/ani3"
+        android:duration="250"/>
+    
+    <item android:drawable="@drawable/ani4"
+        android:duration="250"/>
+        
+
+</animation-list>

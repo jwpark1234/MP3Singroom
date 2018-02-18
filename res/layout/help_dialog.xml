@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+   
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+>
+
+    <TextView
+        android:id="@+id/txt1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:text="안녕하세요. MP3노래방입니다.\n사용법을 안내해드리겠습니다.\n\n1.스마트폰에  MP3 파일과  LRC 가사 파일을 넣어주세요.(파일이름은 동일하게)\n\n2.'노래방'에서 원하는 곡을 선택하세요.\n\n3.'노래듣기'탭에서 선택한 곡을 들을 수 있습니다.\n\n4.'노래하기'탭에서 녹음 버튼을 클릭하시면 MR과 싱크가사가 재생됩니다.\n\n5.녹음된 파일은 '나의기록'에서 확인하실 수 있습니다."
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"    
+    />
+    <Button
+        android:id="@+id/helpbtn1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="닫기"
+        android:textStyle="bold"
+        android:layout_below="@id/txt1" 
+        />
+
+
+</RelativeLayout>

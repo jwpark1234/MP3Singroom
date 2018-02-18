@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mp3Layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="2dp" >
+
+    <include
+        android:id="@+id/music_info"
+		layout="@layout/list_item"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content" />
+    
+    <Button
+        android:id="@+id/start"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/music_info"
+        android:text="▶" />
+
+    <Button
+        android:id="@+id/stop"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_toRightOf="@+id/start"
+        android:layout_below="@+id/music_info"
+        android:text="■"
+        android:textSize="10dp" />
+    
+     <SeekBar
+        android:id="@+id/playbar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/stop"
+        android:layout_toRightOf="@+id/stop" />
+     
+     <TextView
+        android:id="@+id/lyrics"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp" 
+        android:layout_below="@+id/start"
+        android:text="가사 파일(.LRC)이 없습니다." 
+        android:scrollbars="vertical"
+        android:gravity="center" />
+
+</RelativeLayout>

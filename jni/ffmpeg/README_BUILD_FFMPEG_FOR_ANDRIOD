@@ -1,0 +1,17 @@
+- Build FFmpeg for android -
+
+- Create standalone android ndk toolchain for android-8 platform
+  How to? Read android ndk document "STANDALONE-TOOLCHAIN.html"
+
+- Change ANDROID_ROOT in "config.sh" to your standalone toolchain folder
+
+- Create new temp folder
+  "c:/ffmpegtmp"
+
+- Configure~!
+  ./config.sh
+
+- Edit config files
+  Find "#define restrict restrict" in config.h, and change it to "#define restrict"
+
+- Build FFmpeg using ndk-build command
